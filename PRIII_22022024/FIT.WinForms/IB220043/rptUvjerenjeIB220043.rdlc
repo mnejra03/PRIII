@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="pVrstaUvjerenja">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!pVrstaUvjerenja.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>pVrstaUvjerenja</rd:DefaultName>
+            <Top>0.17639cm</Top>
+            <Left>4.82742cm</Left>
+            <Height>0.6cm</Height>
+            <Width>6.39467cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Uvjerenje se izdaje na zahtjev studenta </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!pStudent.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> (</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!pIndeks.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>) u svrhu </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!pSvrha.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>, </Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>te se u druge svrhe ne moze koristiti. </Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>1.73567cm</Top>
+            <Left>0.44076cm</Left>
+            <Height>1.15033cm</Height>
+            <Width>14.52267cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>U Mostaru, </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Globals!ExecutionTime</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox5</rd:DefaultName>
+            <Top>6.08895cm</Top>
+            <Left>0.44076cm</Left>
+            <Height>0.6cm</Height>
+            <Width>7.58cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox6">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Potpis:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox6</rd:DefaultName>
+            <Top>5.2705cm</Top>
+            <Left>12.87075cm</Left>
+            <Height>0.6cm</Height>
+            <Width>1.23cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Line Name="Line3">
+            <Top>6.68895cm</Top>
+            <Left>11.38909cm</Left>
+            <Height>0cm</Height>
+            <Width>4.61667cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Navedeni student ima status </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!pAktivan.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>, </Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>polozio je </Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!pPolozeniIspiti.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value xml:space="preserve"> </Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>ispita (</Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!pIspiti.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>), a njegova prosjecna ocjena iznosi </Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!pProsjecnaOcjena.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>.</Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>3.937cm</Top>
+            <Left>0.44076cm</Left>
+            <Height>1.15711cm</Height>
+            <Width>14.52267cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>2.95567in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <PageHeader>
+          <Height>2.88853cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Image Name="Image1">
+              <Source>Embedded</Source>
+              <Value>Fit_logo</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.57009cm</Top>
+              <Left>0.3937cm</Left>
+              <Height>1.85983cm</Height>
+              <Width>3.29917cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Image Name="Image2">
+              <Source>Embedded</Source>
+              <Value>Fit_logo</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.57009cm</Top>
+              <Left>12.87075cm</Left>
+              <Height>1.85983cm</Height>
+              <Width>3.29917cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>FAKULTET INFORMACIJSKIH TEHNOLOGIJA</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Univerzitet "Džemal Bijedić" Mostar</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>www.fit.ba</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.79275cm</Top>
+              <Left>4.04166cm</Left>
+              <Height>1.63717cm</Height>
+              <Width>8.42667cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>1.10067cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="OverallPageNumber">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style />
+                    </TextRun>
+                    <TextRun>
+                      <Value>/</Value>
+                      <Style />
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!OverallPageNumber</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>OverallPageNumber</rd:DefaultName>
+              <Top>0.17639cm</Top>
+              <Left>9.45775cm</Left>
+              <Height>0.6cm</Height>
+              <Width>6.71217cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="pVrstaUvjerenja">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pStudent">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pIndeks">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pSvrha">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pAktivan">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pPolozeniIspiti">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pIspiti">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pProsjecnaOcjena">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pVrstaUvjerenja</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pStudent</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pIndeks</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pSvrha</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>pAktivan</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>pPolozeniIspiti</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>pIspiti</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>pProsjecnaOcjena</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Fit_logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAIAAAABDCAYAAABUQg3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTkzQ0E2OEFBOTQzMTFFN0I4MDlCREUzOTVBRTYyOTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTkzQ0E2OEJBOTQzMTFFN0I4MDlCREUzOTVBRTYyOTIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFOTNDQTY4OEE5NDMxMUU3QjgwOUJERTM5NUFF
+NjI5MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFOTNDQTY4OUE5NDMxMUU3QjgwOUJERTM5NUFFNjI5MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Prk3Jz4AABLqSURBVHja7F0JdFRVmn737a/2yr6RRAITSJBEECStIqAsgq0j3YdWPI00OK3depx2gVZplxG1nXbocY7HGRRHwYPtuNENjQrTLt0yYkAWCUsSCELIvta+vXr13vy3qhIjBvIq5hYp23vOo7ZXlf/d//u///vv8kCaplHfhRaBy3AqmqErpKa3B7WstqCW0xZUczrwY0jL7pHVjJ6QluZSNJsjrFloijJ2hTRJ0TQBvs7DwcLBwIEG/iwcChxhOEJ2ng6JNOXjaeTNFpBLpJEjW0I96RzqyhHojlwJdeSIdEemgDqzBNSdwdNOM0OFaDR6+w2lEgBUOBwyZWgORHK/9GvFDd5IyUmfWnLarxaDswu6wdFuRbP7IppJU8Gp+NL6Lg+d9Xj2cz1NG+S5dtbv0ZTGIhQwsMhj4yiHnUPdAIr2fAm15It08xiJbiqQ6JYcEbXninRXGofcPE1p3wNgEGc3B9SMI271H464IxcfdEYq67xqWaNfHeuU1WxNoTgK2447HaH44zAdS6INBEj00L56D1MCQ4UtHHJkYuYQ6KZiAzo9zsScLDHSDWONdCMGSbaIegUU7YrvPgD8EYo76o6U7HVELv2/HqWqxhWZesqvlgZkzUapAxxNjxIHjxRIzgZIlEWQJnG0E1iipVBCJ0vNTH25mTk2wUzXjzPSp/IlukugRwYYFwwAYY1CEN0lf+0OX/5JtzLnc0dkRgtEN6Vo7Ncc/V1x9nAZRB0ADmAOHlJGnkg3AhhqL7YyhyqtzBcXW5hjAIxmiYnqldELgG5ZM+7qUaZtb1cWgtOv+dITKVcV
+je93OP0dcpx2Hv3wtfcGfIDOgXZ0LuaIMSPN0qF8A32qzEwfuszO7Lksjd0DwDiaJyLXBQdAR0gz7+xQZr3dKi8Gp891BbX8mOEoprlTiarV+IuBwrJPf9BUBAI0aGJREF4FrRwKcogKwVdCJgbJ8FqGTBaOVxRAgJQClUJEYCDBaTFZ4FUoulfWGBSrSODrFCdrlAgVDEgBSoQfkzyKJkLFI/ngEewQwKaYhMRpMvIVU7Ai8pdZmQNXZbAfz83iPpxhZ/ZDdeJNCgA8CsXv7AhfublZXvpRp7LQA+VYtJeYUU7pap+jtX6xRoPzzBzqgc7DYq0NSr3WXAG1ZQt0e6aIukHF99ig3EvnKQ+Uhz54HcAlIwBBBg8q8Etq1KNo+NiT1SjOAEEUB44X4EdFR1g1BCOU0SFrlt6wZnPKWnpHSM3okrWs1qCW2xZQC5qD6phOeB6KaKIBqpFLrMzni3K4nfOy2I8qrEwD2KSOKAAOuiIlrzTKP32rJby03auOj5rPoNHp9L6IVmNsxIDjckXUdJGRPl5qYmrLLXTdeCNzstBAN0HN32XnkRccmlKDJvjy3GENGERLAzDkN3jVkhNetcgR1vhCif5yZgb76bcGQBAo6M9t4dnPfynftasrfC3kdCEKdzQKHR6J500GqRkSfWayhT44zc7unWpjDkyyMHVFBrrVMAwhlYoNchAD4OCHDQBvhGJfa5L/8dmG0Oo6hzIt6nF2FIZAPMLtEt18qY3ZfU0W++GV6exnZRb6uJVFIervvCXsMshDaBM4/om64CNnXJFK6tskOFJOj8SifKyZrpmXzb23KJt7vyqNOZDOIz/1fRu+CNzRqUxffSTwzOFuZWbU8aOlbOujdzBpjJk+emMu99aP8vk/Qkl0ZKQGTP6uAdAW1Ky/OhxY+2aj/EsKa3lmdEW7UaR75mdzW35WxG+ak8lWQx6PpJITZFlmT506Pd7v92dxHOcuKiqqN5tNSWGrIVPAGy3h
+OXd/4d/Q6VPHRivT0dAisai/yMocvK2Yf2FZIf9WgYh6UzECd+/efcX69S/8++nTp6eqqoqgURkZGadvvvmmR5csWfLqBWMAUPcIov6xF46HHgaqR6OC7pXoiEnk8iz2/bvHCv9xfS73kZjCFF9dvadq1apVHyiKYhBF8SuFHg5TgUCAuvfee39xyy1L1ycdAC1A+Uv2+F7d3RG+flREPRRmDEOFFuRyb943Tlg3O5M9lPJlWFihVq5c+beGhoaZA53ff8lKhOJ5rnPjxlcqCwoK2kjZ8Y24PuJR82Z/4vlwVDgfHE9rVPDGQu7l6jnmiu1VxmUj6fwLOapz+HDNlJMnTw7q/GhuZhnK5XJl7dq167qkaYBjXjVv7ifene1+ddIFdX5M0SsLCrjXn5goPjnVxtSP5M9/4YqU/L4hdPd+Z2Q6jSj1ynT2b/eOE54bZ6TbknWJdXX1l2KqFwThnOcwQHvHjtVWwdMNxAHQEdJMP/7M93bU+ewFdDykpKps7t2nysTfzMpgvxjpP7GtXZm1pNr7xxBeZxBfq3WkW/nBH87Iy7b+wLjwqnS2JhmX2t7eXojQ+YMMA6Crq2sMSTv6U8CK/f7nah1K1QVxPubisEaNszAHXq8yzft0puk6Es7H2uaf9vleCimULcpwDBU74Dmepbx9f2CDL5K0Itekq9JVVSNxAKw/Jf/4vWZ5+QWhfXC8kUUdaysMd9Rcbb7spgLuL6SseL8tPL/Tr5YM6mIAfr0rMv2jzvDlybhsUPnSUAyAP4c0IZCcsmeB+qXf1QfXREf2kk338O/iYuHF35WLj5YY6S7Sf7LWExl7fibSqAavWgzPPiFti8fjHhIANE1TPp9XCAaDtCRJRMpddlOjfNMpr1qZNOLTYvX8OBu779kK6e5F2exnycJcnjQ0yPBy7mTYghAtDdlV0chHAgAFJ2aZSAp4o1m+KWlTt5FouvXdXyatPjjHXJVM5+M2P5v9gOeQc9D6D+Ir
+XaJPz8riPk3OOEBYGhokCGsAAQ5iyow+4o5MJT7KFxd5FWnMx7tmmac+M0l8xsQmf959koVpXDNRejA6ohgfTu6fSFIp9enJ0n35OtbRjUSDGl/EFD8ES0AK8PFer5cjBgBZo9KIRz1F+R6aJP2qepb56svsI1vTJ9oemSCs33CZ6YcTbUw1x1BugUHOS9LZj9+53DTntiJ+S7LsgOAWdZyDG3Y+T0wEQur3gI8spBT+BDtbvWGKYeUV6cwxapS024q47bcWcu81BbR00L7qGBH10kle7qWqmqjzVJ4kAOhSE1Mz4tMpalToaSvHi0/tnW2eOZqc39dAi6hjDairSEI9yXY+lIDI7QbyYZghNQBUABykC3IAuHkM9/qIXj5kdhuPml+rMs1/6RJpjZmNLoP+vp2FPy22KVXPQBCLhSAxAKwoFl4tMtIjwwJA+dMz2Z17ZpunLS3g/vK9n8+deuHQlQKABRi95w7LkDwReR8pEx9euce3lRruPuaYoo5S/nMV0iPSIHP0jY2NRUePHp3hdDrtaWlpvRMnTqwuKio6cyF6H5S1WFNTM6OpqWk8KHG1sLCwtqKi4nNBEMJJ+vuc3+/n9IwEyrJM4XRBEonUiiJ+2zGPumbd0cCT0eFgvTiIL8kqsbH7110s/vMNud+soRVFoZ5//vnH/vSnrQ/AhfdfiNFoDN5ww/W/veuuux5n2eRNQOzdu/fSdet+vxEAWQ7UGn0P5+LS0tLqBx749bIJEyacID4cEonw+BgKAPEUgEFAjAH6C9F/myQ+9Xil4Rfwhj+6cUk7T02vxOg+30jXPnOJYfkXc8xVgzkftxdffPGhjRs3PYpznslkovoOeC1u2vTqv7z00n+vTpbzT506VbhmzW+2nTnTVG4wGPptkSSJqq2tnfHggw9t7e7utiXBFN3KHoMEDok4AHB7uFRYv3eOufJHxcIGM4c6o9SOwdB3qFGB1zo/n/ufjTNMP6y9xlJ5/3hhk+kc
+Qg8oNv+dd7bcZ7FYqLMHPfBr/P6WLVtWtbS05CYDAJs3b74fFHWuJH0zoICRsL0T33jjzTuSkAJ4iGpOLwN4vV5yGuDsN6bamBNvTzf8vCOkrTroipQ1B9RCcL0I1rpLjPTpMjN9Ip3/5ibDwVp1dfU1Ho8nDUfZYA1Tr8PhzNizZ8/Vixcv3kyy0yGPSvv27V90rhU4uOHPwOYbb7/99qfxihxSLRQKCZACmKFGAuPjBRgwUtIA0NfwPXAWZEXH6oc9Xn/8+PEpQ894IerEiYYpOEBJAqC1tbUQBGjh+WpvrEU6OjrGdXZ2ZObl5RGbnYQ+ESidm3Kim4+TlQJGugF15Q6Fcvy5w+HIIU27wADp4XCYPR8g4/Pv5kAgYCc8EIQZQPf5wWAwNQEQCASNevIcdIaJNAAg5+paWQO2cHixBuHAEDEA9PQNnhJ2Ol2pCQC/32fVs+jB5XJaSAMAxJ91qKjDtuKy1efzE7VHz1qAs+wyJF0DjEDEAdJ95qGnPBGIIjnqnLPz8wmvmv1qk7wUHis5mvLMy+LeXZLP7RzOfj8QUrpoHatut9tlJctGIVHvKq84KKWUAwAYLeJ8qm/Zk88EypiH2rx/1cubLeGrfrbP/4Y/qGb38dTmk6E7X87j34Qq5VaoRIIJ0q5dz9o6fA7kXKJjASBGpb5BKD0A6O3tTb0UgIdb4TDqGe4E55ug0/vrswafmvvzff4/+MNaNsXHt5/jg0PUX1vkJffUBJ4cRgqw6c250OFEGQCrepTYqLsh5QAA0W8EWjfoXPlqGCjSNjXKS11BNW/QdYoAgrebw7d+6QNmSEyQ6lb2shwmukhGUSIJORRAmXoA8Hg80ajWyQAinN8PgIPOSMU5LYOfC4S19HpPdPVuArTrsOkZeIlTLtEU0NPTI+pd6h0rk3vFlAMARJxZ72JGPDECDGDue21hhxhpRJRmYqlAIvaA0NSVAmKADBIdB4CYTiiioR9TTwOA6LLgkkpn
+CsDCqL/0uiaL3XHOySjQTsVGuqbSxupeZYSjze12W/QygMvlJsoAYE6ClJ6CI4Eej9uql+biyrtfeP20iN82M4d7hwqdNSuJy/iIpj1aLj5sTmBVMQARAcisehgAgyQQ8BMFAFb1esDYZw9eD6C3ahhNKcCuqvoAgM9zOl22ATqP2jLDuOyW8cKz+N788WXbVIGJqX1lhvG65YX8nxOxBWsRXGrqTQF+f8BCcjtWInV9nCFFUgBgCaLclsgOfHDQ16IO39Fr81TDPY9PVJ9uDmglPE15y810vXkYt3YDkSnhKkMvA4AtZgAwazBIRPYuJDKyh4EI52MxTVPUyN8NhRgAoNPtSHexi6c8vYOWXmMNdMdYA9XxbWwBBjACACS99kDEmRQF79yRPCT6xu12iXptiaWkAN4fyBqNxhHfHkYsBUDpYtN7kRjcA1MAAUGKASDq1wABA3xHIhcc+sEYXxfIAyiJ7A4iBgBArF3v4kLcFyRLL2AjC+RQ3Ss8cI7GLEDKnmHM7+P1g6kFALfbY6Np/TTncDit5NjIqaskHRBxAihvYgDw+/0iSmAsGGznAcSpBQCIaGuCNGcjyAA2vao+viMXpwEiU8LxW8AJiZSB2PkAGj5lANA3p57IRXo8nmiUkmEAhy2RMgpPTYMGIMJIWM1jVZ9IFRCtjGPLyFIDAJD/BUC5OREGAJSbsdghMybhtydy//r4yKGNUHAw+LYviYwDgD0sTgMpA4C+2b1EAIBLNTwpREiP2BOZfsUASGT2MDEwBqJ0rpcd4+mRcblcqcMAuITCCxkTZAAjdAyRaU+Px21PRHSRnBHEan54dE5mPoAIAPDMHuTRhACAVxDhhSFkoi5oQwmuwABbiKwJUJTYtrBEvoMZSVUjYsoAAK9ihQ5kE+l0nP/x5g0S9gB9mhJngB4iYPT5fAywI5OIPViUQhpjUwYAVqvFzXFcKJEJFZ7nA1ar1UPGHmtvIlUAtttms/WQsMVut3lM
+JpNL70QZtgVvWMnISO9JGQAUFBSczs7OrtNb1uHaOCcnpxa+10jCnkmTJn2ayEYM3Onl5eW7SdhisVh8xcXFn4fDsu7oz8jIOHnRRRfVpwwARFFU586d+wq+573OspGaN2/ey8AaROZg58yZvSUzM7NZDyDxcvYxY8YcvuKKK/6X1MDUwoULN+gBZGxq2o/t32Q2m/0pAwDcli69+T8rKio+gopgCIXuoeC8D37ykyUvkLIF2Kh7xYoVD2BAnq/jMUDgc+XOO395H3Q4sf9RbP78eTsWLFjwgtPpHLJvSktLP1u+fPk6UrYwjz32GJEfhmhWq6pmvFdXV1/Z2NhYguvegbUv7mzskClTpux44om1N0PO9VEEW1lZ2WFJktoOHDgwFwtUnFf7hFh8RRJmLtfq1auWzZ8/fztFuE2fPn1Hd3d3dl1d3aX47w/cFIP7Bkf+5MmTP167du2SrKwsByk7iP/fwXjgY+vWrcu3b3/3jtbW1jJ8YwgAQjA3N/fookWL/mvx4hs3CYKQtJtG1tQcnvzaa6/9+tChQxgImdj/BoOhfdq0adtvuWXpv44fP/5ksmzBff/++zsWbdu27Z6GhobpwD549DSYl5dXe+21174IffMygFYmacP/CzAA+68iAunb1bcAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>09a0ed25-8b7d-4e18-96f5-175164d11007</rd:ReportID>
+</Report>
